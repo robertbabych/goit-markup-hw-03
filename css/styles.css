@@ -11,6 +11,24 @@ body a {
   text-decoration: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 body p {
   font-weight: 400;
   font-size: 16px;
@@ -22,8 +40,17 @@ body ul {
   list-style-type: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /*============= HEADER ============*/
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-logo {
@@ -76,6 +103,9 @@ body ul {
 .hero {
   background-color: #2e2f42;
 }
+.hero-container {
+  padding: 188px 472px 292px 472px;
+}
 
 .hero-title {
   font-weight: 700;
@@ -84,6 +114,7 @@ body ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  max-width: 496px;
 }
 .order-button {
   font-weight: 500;
@@ -100,6 +131,10 @@ body ul {
 }
 
 /*=========== APPORACH ===============*/
+.approach {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .apporach-title {
 }
 
@@ -109,6 +144,7 @@ body ul {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team {
