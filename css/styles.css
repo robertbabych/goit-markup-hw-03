@@ -55,6 +55,10 @@ body ul {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.header-container {
+  display: flex;
+  gap: 332px;
+}
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -76,6 +80,16 @@ body ul {
   color: #2e2f42;
 }
 
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
 .header-menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -88,7 +102,9 @@ body ul {
 .header-menu-link:focus {
   color: #404bbf;
 }
-
+.header-soc-menu {
+  display: flex;
+}
 .header-soc-link {
   font-weight: 400;
   font-size: 16px;
@@ -105,10 +121,10 @@ body ul {
 /*=========== HERO ==============*/
 .hero {
   background-color: #2e2f42;
-  padding: 188px 472px;
-  text-align: center;
 }
 .hero-container {
+  padding: 188px 472px;
+  text-align: center;
 }
 
 .hero-title {
@@ -116,9 +132,10 @@ body ul {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #ffffff;
+  margin: 0 auto;
   max-width: 496px;
+  text-align: center;
   margin-bottom: 48px;
 }
 .order-button {
@@ -129,6 +146,14 @@ body ul {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
+  top: 20px;
+  left: 20px;
+  padding: 16px, 32px, 16px, 32px;
+  border-radius: 4px;
+  gap: 10px;
+  border: none;
 }
 .order-button:hover,
 .order-button:focus {
@@ -140,7 +165,24 @@ body ul {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.approach-item {
+  width: calc((100% - 24px * 3) / 4);
+}
+.apporach-list {
+  display: flex;
+  gap: 24px;
+}
 .apporach-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .approach-item-title {
@@ -156,6 +198,10 @@ body ul {
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-title {
   font-weight: 700;
@@ -173,6 +219,10 @@ body ul {
 }
 .team-item {
   background-color: #ffffff;
+  border-radius: 4px;
+  width: calc((100% - 24px * 3) / 4);
+  padding: 32px;
+  text-align: center;
 }
 .team-item-title {
   font-weight: 500;
@@ -191,6 +241,12 @@ body ul {
 
 .portfolio-item {
   border: 1px solid #e7e9fc;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: calc((100% - 24px * 3) / 4);
 }
 .portfolio-img {
   margin-bottom: 32px;
@@ -213,6 +269,11 @@ body ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  padding-left: 16px;
+}
+.portfolio-item-text {
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 /*============== FOOTER =================*/
 .footer {
