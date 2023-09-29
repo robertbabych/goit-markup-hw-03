@@ -29,6 +29,9 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
 body p {
   font-weight: 400;
   font-size: 16px;
@@ -102,9 +105,10 @@ body ul {
 /*=========== HERO ==============*/
 .hero {
   background-color: #2e2f42;
+  padding: 188px 472px;
+  text-align: center;
 }
 .hero-container {
-  padding: 188px 472px 292px 472px;
 }
 
 .hero-title {
@@ -115,6 +119,7 @@ body ul {
   text-align: center;
   color: #ffffff;
   max-width: 496px;
+  margin-bottom: 48px;
 }
 .order-button {
   font-weight: 500;
@@ -146,9 +151,11 @@ body ul {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-
+/*============= TEAM ====================*/
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   font-weight: 700;
@@ -158,8 +165,12 @@ body ul {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
+.team-img {
+  margin-bottom: 32px;
+}
 .team-item {
   background-color: #ffffff;
 }
@@ -169,9 +180,21 @@ body ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 /*============= PORTFOLIO ==================*/
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-item {
+  border: 1px solid #e7e9fc;
+}
+.portfolio-img {
+  margin-bottom: 32px;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -180,6 +203,7 @@ body ul {
   color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-item-title {
@@ -188,10 +212,13 @@ body ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 /*============== FOOTER =================*/
 .footer {
   background-color: #2e2f42;
+  padding-top: 102px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -218,4 +245,6 @@ body ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 18px;
 }
