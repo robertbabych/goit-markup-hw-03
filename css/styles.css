@@ -127,9 +127,9 @@ body ul {
 /*=========== HERO ==============*/
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero-container {
-  padding: 188px 0;
   text-align: center;
 }
 
@@ -163,6 +163,19 @@ body ul {
   display: block;
   min-width: 169px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
