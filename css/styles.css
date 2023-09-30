@@ -152,16 +152,26 @@ body ul {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
-  width: 169px;
-  height: 56px;
   top: 20px;
   left: 20px;
   padding: 16px, 32px, 16px, 32px;
   border-radius: 4px;
-  gap: 10px;
   border: none;
   display: block;
-  min-width: 169px;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #404bbf;
+}
+
+/*=========== APPORACH ===============*/
+.approach {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -176,16 +186,6 @@ body ul {
   border-width: 0;
 }
 
-.order-button:hover,
-.order-button:focus {
-  background-color: #404bbf;
-}
-
-/*=========== APPORACH ===============*/
-.approach {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .approach-item {
   width: calc((100% - 24px * 3) / 4);
 }
@@ -230,9 +230,8 @@ body ul {
 }
 .team-item {
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
   width: calc((100% - 24px * 3) / 4);
-  padding: 32px;
   text-align: center;
 }
 .team-item-title {
@@ -243,7 +242,9 @@ body ul {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-
+.team-item-text {
+  padding-bottom: 32px;
+}
 /*============= PORTFOLIO ==================*/
 .portfolio {
   padding-top: 120px;
