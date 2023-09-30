@@ -159,7 +159,7 @@ body ul {
   border: none;
   display: block;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
 }
 
@@ -179,11 +179,12 @@ body ul {
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
   padding: 0;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
   white-space: nowrap;
-  border-width: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .approach-item {
@@ -224,9 +225,10 @@ body ul {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-
+.teammate-container {
+  padding: 32px 0;
+}
 .team-img {
-  margin-bottom: 32px;
 }
 .team-item {
   background-color: #ffffff;
@@ -257,6 +259,9 @@ body ul {
 .portfolio-item {
   border: 1px solid #e7e9fc;
 }
+.portfolio-item-container {
+  padding: 32px 0;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -265,8 +270,8 @@ body ul {
   width: calc((100% - 48px) / 4);
 }
 .portfolio-img {
-  margin-bottom: 32px;
 }
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -289,7 +294,6 @@ body ul {
 }
 .portfolio-item-text {
   padding-left: 16px;
-  padding-bottom: 32px;
 }
 /*============== FOOTER =================*/
 .footer {
