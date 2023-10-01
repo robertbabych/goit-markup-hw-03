@@ -52,13 +52,11 @@ body ul {
 }
 /*============= HEADER ============*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
-  gap: 332px;
+  align-items: center;
 }
 
 .header-logo {
@@ -101,7 +99,9 @@ body ul {
   color: #2e2f42;
   padding: 24px 0;
 }
-
+.header-soc {
+  margin-left: auto;
+}
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #404bbf;
@@ -109,7 +109,6 @@ body ul {
 .header-soc-menu {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .header-soc-link {
   font-weight: 400;
@@ -249,7 +248,6 @@ body ul {
   margin-bottom: 8px;
 }
 .team-item-text {
-  padding-bottom: 32px;
 }
 /*============= PORTFOLIO ==================*/
 .portfolio {
@@ -292,10 +290,8 @@ body ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  padding-left: 16px;
 }
 .portfolio-item-text {
-  padding-left: 16px;
 }
 /*============== FOOTER =================*/
 .footer {
